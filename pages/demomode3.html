@@ -23,7 +23,7 @@
 
     <!-- Morris Chart Css-->
     <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
-
+    <link href="../plugins/dropzone/dropzone.css" rel="stylesheet">
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
 
@@ -321,41 +321,79 @@
         </aside>
         <!-- #END# Right Sidebar -->
     </section>
+    
 
     <section class="content">
         <div class="container-fluid">
-            <table id="example" class="display" style="width:100%">
-                <thead>
-                        <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>location</th>
-                                <th>Extn.</th>
-                            
-                                <th>Action</th>
-        
-        
-                        </tr>
-                </thead>
-                <tfoot>
-                        <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>location</th>
-                                <th>Extn.</th>
-                            
-                                <th>Action</th>
-        
-                        </tr>
-                </tfoot>
-        </table>
- 
+            <div class="block-header">
+                <h2>Survey Upload</h2>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        Upload Survey Data
+                        
+                    </h2>
+                    
+                </div>
+                <div class="body">
+                    <h2 class="card-inside-title">paragraph</h2>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <form action="blah.php" method="post" >
+                                
+                        
+                            <div class="form-group">
+                                <div class="form-line"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension>
+                                    <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..." spellcheck="false"></textarea>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
+                        </form>
+
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                <div class="body">
+                    <form action="/" id="frmFileUpload" class="dropzone dz-clickable" method="post" enctype="multipart/form-data">
+                        <div class="dz-message">
+                            <div class="drag-icon-cph">
+                                <i class="material-icons">touch_app</i>
+                            </div>
+                            <h3>Drop files here or click to upload.</h3>
+                        </div>
+                        
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" id="option1" class="form-control">
+                                <label class="form-label">option1</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" id="option1" class="form-control">
+                                <label class="form-label">option2</label>
+                            </div>
+                        </div>                        
+                        <button type="button" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
+                         
+                        
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </section>
 
+
     <!-- Jquery Core Js -->
     <script src="../plugins/jquery/jquery.min.js"></script>
-../
+ 
     <!-- Bootstrap Core Js -->
     <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
@@ -377,7 +415,7 @@
 
     <!-- ChartJs -->
     <script src="../plugins/chartjs/Chart.bundle.js"></script>
-
+    <script src="../plugins/dropzone/dropzone.js"></script>
  
 
     <!-- Sparkline Chart Plugin Js -->
